@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background-color: rgb(242, 238, 238);
+}
+
+.three-dot{
+    position: absolute;
+    top: 2.0rem;
+    right: 2.0rem;
+    font-size: 20px;
+}
+.instruction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-wrap: break-word;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(247, 241, 191);
+    color: rgb(128, 110, 6);
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    top: 4.0rem;
+    right: 4.0rem;
+    padding: 7px;
+}
+.close-instruction{
+    position: absolute;
+    top: 1.0rem;
+    right: 1.0rem;
+    font-size: 20px;
+}
+.box{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signIn {
+    align-self: center;
+    justify-self: center;
+    background-color: white;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.signIn:hover {
+    background-color: black;
+    color: white;
+}
+
+.google-icon {
+    font-size: 40px;
+    margin: 2%;
+}
