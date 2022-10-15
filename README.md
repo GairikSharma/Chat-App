@@ -1,1 +1,1 @@
-ChatX is a real time chat application, where user can login with their email id’s and logged in users can chat with each other. Here firebase is used for the login purpose and to store all the real time messages.
+
