@@ -9,7 +9,7 @@ import 'firebase/compat/firestore';
 import './chat.css'
 
 
-function SendMessage() {
+function SendMessage(props) {
     // const end = useRef()
     const [msg, setMsg] = useState('')
     async function sendMessage(e) {
@@ -39,8 +39,8 @@ function SendMessage() {
                     
                         <input type="text" value={msg} placeholder='Send message...' onChange={(e) => {
                             setMsg(e.target.value)
-                        }} />
-                        <button type='submit' className='send-button'>
+                        }} className={props.theme=='light' ? 'msg-field-light' : 'msg-field-dark'} />
+                        <button type='submit' className={props.theme == 'light' ? 'send-button-light' : 'send-button-dark'}>
                             <p>send</p>
                         </button>
                     
