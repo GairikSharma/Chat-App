@@ -201,8 +201,21 @@ input {
     border-radius: 3px;
     padding: 10px;
 }
-
-.send-button {
+.msg-field-light
+{
+    background: white;
+    color: black;
+}
+.msg-field-dark
+{
+    background: #333;
+    color: white;
+}
+.msg-field-dark::placeholder
+{
+    color: #acacac;
+}
+.send-button-light, .send-button-dark {
     width: 15%;
     background: transparent;
     border: none;
@@ -210,8 +223,19 @@ input {
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    background-color: white;
     border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer
+}
+.send-button-light{
+    background: white;
+    color: black;
+}
+.send-button-dark
+{
+    color: white;
+    background: #048500;
 }
 
 .scroll {
