@@ -1,202 +1,185 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  position: relative;
-  background-color: rgb(242, 238, 238);
+    position: relative;
+    background-color: rgb(242, 238, 238);
 }
-
+.theme-changer-dark-button-signout
+{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.theme-changer-light-button-signout
+{
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+}
 nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  width: 100%;
-  height: 64px;
-  background-color: white;
-  color: rgb(23, 113, 216);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    color: rgb(23, 113, 216);
 }
 nav .logo {
-  width: 20%;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  font-size: 34px;
-  margin-left: 12px;
-  font-weight: 600;
+    width: 15%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 80%;
+    margin: 1.5rem;
 }
-nav .profile-signout-btn {
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-items: center;
+nav .theme-profile-signout {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-nav .profile-signout-btn .nav-profile {
-  width: 30%;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-items: center;
-}
-.showSignOut h3 {
-  margin-top: -25px;
-}
-
-.close {
-  color: black;
-  font-size: 25px;
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .signOut {
-  width: 30%;
-  height: 34px;
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 2.5%;
-  font-weight: 500;
-  border: none;
-  transition: 0.25s;
-  border-radius: 3px;
-  background-color: transparent;
-  box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
-}
-.signOut:hover {
-  color: rgb(23, 113, 216);
-  background-color: transparent;
-  box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
-  box-shadow: 0.4rem 0.4rem 1rem #e9e9e9 inset, -0.4rem -0.4rem 1rem #fff inset;
+    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.3%;
+    border: 1px black solid;
+    border-radius: 7px;
+    max-width: 50%;
+    padding: 5px;
+    align-self: center;
+    background-color: transparent;
 }
 
 .container {
-  /* margin-top: 1.0%; */
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  /* padding: 7px; */
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(242, 238, 238);
+    /* margin-top: 1.0%; */
+    width: 100%;
+    min-height: 100vh;
+    z-index: 100;
+    background-position: center;
+    /* padding: 7px; */
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(242, 238, 238);
 }
 
 /* Section */
 .text-with-photo {
-  width: 100%;
-  flex-direction: row;
+    width: 100%;
+    flex-direction: row;
 }
 
 /* Section */
 .wraper {
-  display: flex;
-  min-width: 40%;
-  max-width: 80%;
-  margin-bottom: 1%;
-  align-items: start;
+    display: flex;
+    min-width: 40%;
+    max-width: 80%;
+    margin-bottom: 1%;
+    align-items: center;
 }
 
 .wraper-sent {
-  float: right;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: end;
+    float: right;
+    flex-direction: row-reverse;
 }
 
 .wraper .recived {
-  float: left;
+    float: left;
 }
 
 .sent {
-  width: auto;
-  min-width: 40%;
-  max-width: 80%;
-  width: calc(100% - 50px);
-  word-break: keep-all;
-  word-wrap: break-word;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  background-color: rgb(23, 113, 216);
-  color: white;
-  margin: 0.5%;
-
-  border-top-right-radius: 7px;
-  border-top-left-radius: 7px;
-  border-bottom-left-radius: 7px;
-  float: right !important;
-  padding: 2.5%;
-  border-bottom-right-radius: 0px !important;
+    width: auto;
+    min-width: 40%;
+    max-width: 80%;
+    width: calc(100% - 50px);
+    word-break: keep-all;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(23, 113, 216);
+    color: white;
+    margin: 0.5%;
+    border-radius: 10px;
+    float: right !important;
+    padding: 2%;
 }
 
 .recived {
-  width: auto;
-  min-width: 40%;
-  max-width: 80%;
-  word-break: break-all;
-  word-wrap: break-word;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  background-color: white;
-  color: black;
-  margin: 0.5%;
-  border-top-right-radius: 7px;
-  border-top-left-radius: 0px !important;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-  float: left;
-  padding: 2%;
+    width: auto;
+    min-width: 40%;
+    max-width: 80%;
+    word-break: break-all;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    margin: 0.5%;
+    border-radius: 10px;
+    float: left;
+    padding: 2%;
 }
 
 .sent .display-name {
-  font-size: 18px;
-  font-weight: 600;
-  color: white;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
 }
 
 .recived .display-name {
-  font-size: 18px;
-  font-weight: 600;
-  color: rgb(23, 113, 216);
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(23, 113, 216);
 }
 
 img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 0.5%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0.5%;
 }
 
 form {
-  margin-top: 2.5%;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 7vh;
-  display: flex;
-  flex-direction: row;
-  background-color: transparent;
+    margin-top: 0%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
 }
 
 input {
-  height: auto;
-  width: 85%;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border: none;
-  border-radius: 3px;
-  padding: 10px;
+    height: auto;
+    width: 85%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
 }
 .msg-field-light
 {
@@ -236,255 +219,321 @@ input {
 }
 
 .scroll {
-  margin-top: calc(15% + 50px);
+    /* margin-top: calc(1% + 10px); */
+    margin-top: 0px;
 }
-p {
-  font-size: 18px;
+p{
+    font-size: 18px;
 }
 
 @media only screen and (min-width: 800px) {
-  p {
-    font-size: 18px;
-  }
-  .signOut {
-    width: 15%;
-    height: 34px;
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 2.5%;
-    font-weight: 500;
-    border: none;
+    p{
+        font-size: 18px;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* position: fixed;
+        top: 0; */
+        z-index: 100;
+        width: 100%;
+        height: 10vh;
+        background-color: white;
+        color: rgb(23, 113, 216);
+        box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+    }
 
-    background-color: transparent;
-    box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
-  }
-  .signOut:hover {
-    color: rgb(23, 113, 216);
-    background-color: transparent;
-    box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
-    box-shadow: 0.4rem 0.4rem 1rem #e9e9e9 inset,
-      -0.4rem -0.4rem 1rem #fff inset;
-  }
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 800;
+        width: 80%;
+        margin: 2.5rem;
+    }
 
-  .container {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    padding: 7px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(242, 238, 238);
-  }
+    .profile {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        align-items: center;
+    }
 
-  /* Section */
-  .text-with-photo {
-    width: 100%;
-    flex-direction: row;
-  }
+    .showSignOut {
+        width: 300px;
+        height: 200px;
+        background-color: white !important;
+        box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        right: 2.0rem;
+        top: 4.0rem;
+    }
 
-  /* Section */
-  .wraper {
-    display: flex;
-    min-width: 40%;
-    max-width: 80%;
-    margin-bottom: 1%;
-    align-items: start;
-  }
+    .showSignOut h3{
+        padding-top: 35px;
+    }
 
-  .wraper-sent {
-    float: right;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: end;
-  }
+    .close {
+        color: black;
+        font-size: 25px;
+        position: absolute;
+        right: 1.0rem;
+        top: 1.0rem;
+    }
 
-  .wraper .recived {
-    float: left;
-  }
+    .signOut {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin: 1.2rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 1.3%;
+        border: 1px black solid;
+        border-radius: 3px;
+        max-width: 50%;
+        padding: 5px;
+        align-self: center;
+        background-color: transparent;
+    }
 
-  .sent {
-    width: auto;
-    min-width: 40%;
-    max-width: 80%;
-    width: calc(100% - 50px);
-    word-break: keep-all;
-    word-wrap: break-word;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    background-color: rgb(23, 113, 216);
-    color: white;
-    margin: 0.5%;
+    .container {
+        transition: 1s;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        padding: 7px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(242, 238, 238);
+    }
 
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
-    float: right !important;
-    padding: 2.5%;
-    border-bottom-right-radius: 0px !important;
-  }
+    /* Section */
+    .text-with-photo {
+        width: 100%;
+        flex-direction: row;
+    }
 
-  .recived {
-    min-width: 80%;
-    max-width: 80%;
-    word-break: keep-all;
-    word-wrap: break-word;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    background-color: white;
-    color: black;
-    margin: 0.5%;
-    border-top-right-radius: 7px;
-    border-top-left-radius: 0px !important;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    float: left;
-    padding: 2%;
-    font-size: 14px;
-  }
+    /* Section */
+    .wraper {
+        display: flex;
+        min-width: 40%;
+        max-width: 80%;
+        margin-bottom: 1%;
+        align-items: center;
+    }
 
-  .sent .display-name {
-    font-size: 1rem;
-    font-weight: 600;
-    color: white;
-  }
+    .wraper-sent {
+        float: right;
+        flex-direction: row-reverse;
+    }
 
-  .recived .display-name {
-    font-size: 1rem;
-    font-weight: 600;
-    color: rgb(23, 113, 216);
-  }
+    .wraper .recived {
+        float: left;
+    }
 
-  img {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    margin: 0.5%;
-  }
+    .sent {
+        min-width: 80%;
+        max-width: 80%;
+        width: calc(100% - 50px);
+        word-wrap: break-word;
+        word-break: keep-all;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: rgb(23, 113, 216);
+        color: white;
+        margin: 0.5%;
+        border-radius: 10px;
+        float: right !important;
+        padding: 2%;
+        font-size: 14px;
+    }
 
-  form {
-    margin-top: 2.5%;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-  }
+    .recived {
+        min-width: 80%;
+        max-width: 80%;
+        word-break: keep-all;
+        word-wrap: break-word;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: white;
+        color: black;
+        margin: 0.5%;
+        border-radius: 10px;
+        float: left;
+        padding: 2%;
+        font-size: 14px;
+    }
 
-  input {
-    height: auto;
-    width: 85%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border: none;
-    border-radius: 3px;
-    padding: 10px;
-  }
+    .sent .display-name {
+        font-size: 1.0rem;
+        font-weight: 600;
+        color: white;
+    }
 
-  .send-button {
-    width: 15%;
-    background: transparent;
-    border: none;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    background-color: white;
-    border-radius: 3px;
-  }
+    .recived .display-name {
+        font-size: 1.0rem;
+        font-weight: 600;
+        color: rgb(23, 113, 216);
+    }
 
-  .scroll {
-    margin-top: 80px;
-  }
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0.5%;
+    }
+
+    form {
+        margin-top: 2.5%;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    input {
+        height: auto;
+        width: 85%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: none;
+        border-radius: 3px;
+        padding: 10px;
+    }
+
+    .send-button {
+        width: 15%;
+        background: transparent;
+        border: none;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: white;
+        border-radius: 3px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
+    
+    .profile {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    }
 
-  .container {
-    padding-top: -4.5%;
-    height: 100%;
-  }
+    .showSignOut {
+        width: 300px;
+        height: 200px;
+        background-color: white;
+        box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        right: 2.0rem;
+        top: 4.0rem;
+    }
 
-  .sent {
-    width: auto;
-    min-width: 40%;
-    max-width: 80%;
-    width: calc(100% - 50px);
-    word-break: keep-all;
-    word-wrap: break-word;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    background-color: rgb(23, 113, 216);
-    color: white;
-    margin: 0.5%;
+    .showSignOut h3 {
+        margin-top: -4%;
+    }
 
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
-    float: right !important;
-    padding: 2.5%;
-    border-bottom-right-radius: 0px !important;
-  }
+    .container {
+        padding-top: -4.5%;
+        height: 100%;
+    }
 
-  .recived {
-    width: auto;
-    max-width: 80% !important;
-    word-break: keep-all;
-    word-wrap: break-word;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    background-color: white;
-    color: black;
-    margin: 0.5%;
-    border-top-right-radius: 7px;
-    border-top-left-radius: 0px !important;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    float: left;
-    padding: 2%;
-  }
+    .sent {
+        min-width: 80%;
+        word-break: keep-all;
+        word-wrap: break-word;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: rgb(23, 113, 216);
+        color: white;
+        margin: 0.5%;
+        border-radius: 10px;
+        float: right !important;
+        padding: 2%;
+    }
 
-  p {
-    align-items: flex-start;
-    margin: 1%;
-    /* font-size: 1.2rem; */
-    font-size: 14px;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
+    .recived {
+        width: auto;
+        max-width: 80% !important;
+        word-break: keep-all;
+        word-wrap: break-word;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: white;
+        color: black;
+        margin: 0.5%;
+        border-radius: 10px;
+        float: left;
+        padding: 2%;
+    }
 
-  .sent .display-name {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: white;
-  }
+    p {
+        align-items: flex-start;
+        margin: 1%;
+        /* font-size: 1.2rem; */
+        font-size: 14px;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
 
-  .recived .display-name {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: rgb(23, 113, 216);
-  }
 
-  form {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-  }
+    .sent .display-name {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: white;
+    }
 
-  .scroll {
-    margin-top: 50px;
-  }
-  .signOut {
-    width: 30%;
-  }
+    .recived .display-name {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: rgb(23, 113, 216);
+    }
+
+    form {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+    }
 }
