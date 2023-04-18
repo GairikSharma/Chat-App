@@ -11,7 +11,7 @@ body {
     background-color: rgb(242, 238, 238);
 }
 
-nav {
+.navbar-light, .navbar-dark {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,8 +20,11 @@ nav {
     z-index: 100;
     width: 100%;
     height: 10vh;
+}
+.navbar-light
+{
     background-color: white;
-    color: rgb(23, 113, 216);
+    color: rgb(33, 150, 243);
     box-shadow:
             0 2.8px 2.2px rgba(0, 0, 0, 0.034),
             0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -30,7 +33,30 @@ nav {
             0 41.8px 33.4px rgba(0, 0, 0, 0.086),
             0 100px 80px rgba(0, 0, 0, 0.12);
 }
-
+.navbar-dark
+{
+    background-color: #1f1f1f;
+    color: #1596ff;
+    box-shadow:
+            0 2.8px 2.2px rgba(90, 90, 90, 0.034),
+            0 6.7px 5.3px rgba(90, 90, 90, 0.048),
+            0 12.5px 10px rgba(90, 90, 90, 0.06),    
+            0 22.3px 17.9px rgba(90, 90, 90, 0.072),
+            0 41.8px 33.4px rgba(90, 90, 90, 0.086),
+            0 100px 80px rgba(90, 90, 90, 0.12);
+}
+.theme-changer-dark
+{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.theme-changer-light
+{
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+}
 .logo {
     font-size: 1.5rem;
     font-weight: 800;
@@ -82,23 +108,31 @@ nav {
     font-weight: 500;
     margin: 1.3%;
     border: 1px black solid;
+    color: black;
     border-radius: 3px;
     max-width: 50%;
     padding: 5px;
     align-self: center;
     background-color: transparent;
+    cursor: pointer;
 }
 
-.container {
+.container-light, .container-dark {
     width: 100%;
     height: 100%;
     background-position: center;
     padding: 7px;
     display: flex;
     flex-direction: column;
+}
+.container-light
+{
     background-color: rgb(242, 238, 238);
 }
-
+.container-dark
+{
+    background-color: #1f1f1f;
+}
 /* Section */
 .text-with-photo {
     width: 100%;
@@ -123,7 +157,7 @@ nav {
     float: left;
 }
 
-.sent {
+.sent-light, .sent-dark {
     width: auto;
     min-width: 40%;
     max-width: 80%;
@@ -133,15 +167,22 @@ nav {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    background-color: rgb(23, 113, 216);
-    color: white;
     margin: 0.5%;
     border-radius: 10px;
     float: right !important;
     padding: 2%;
 }
+.sent-light{
+    background-color: #1771d8;
+    color: white;
+}
+.sent-dark
+{
+    color: white;
+    background: #2987f3;
+}
 
-.recived {
+.received-light, .received-dark {
     width: auto;
     min-width: 40%;
     max-width: 80%;
@@ -150,24 +191,39 @@ nav {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    background-color: white;
-    color: black;
     margin: 0.5%;
     border-radius: 10px;
     float: left;
     padding: 2%;
 }
+.received-light
+{
+    background-color: white;
+    color: black;
+}
+.received-dark
+{
+    color: white;
+    background:#313131;
+}
 
-.sent .display-name {
+.sent-dark .display-name, .sent-light .display-name {
     font-size: 1.2rem;
     font-weight: 600;
     color: white;
 }
 
-.recived .display-name {
+.received-dark .display-name, .received-light .display-name {
     font-size: 1.2rem;
     font-weight: 600;
-    color: rgb(23, 113, 216);
+}
+.received-dark .display-name
+{
+    color: #70b3ff;
+}
+.received-light .display-name
+{
+    color: #1771d8;
 }
 
 img {
@@ -262,8 +318,8 @@ input {
 
 .showSignOut {
     width: 300px;
-        height: 200px;
-        background-color: white !important;
+        height: 250px;
+        background-color: gray;
         box-shadow:
             0 2.8px 2.2px rgba(0, 0, 0, 0.034),
             0 6.7px 5.3px rgba(0, 0, 0, 0.048),
