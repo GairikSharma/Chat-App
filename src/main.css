@@ -24,6 +24,7 @@ nav {
   z-index: 100;
   width: 100%;
   height: 10vh;
+  box-shadow: none;
 }
 
 .navbar-dark {
@@ -35,6 +36,7 @@ nav {
   z-index: 100;
   width: 100%;
   height: 10vh;
+  box-shadow: none;
 }
 
 .navbar-light .logo,
@@ -86,18 +88,12 @@ nav {
 .navbar-light {
   background-color: white;
   color: rgb(33, 150, 243);
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgb(39, 39, 39);
 }
 .navbar-dark {
   background-color: #1f1f1f;
   color: #ffffff;
-  box-shadow: 0 2.8px 2.2px rgba(90, 90, 90, 0.034),
-    0 6.7px 5.3px rgba(90, 90, 90, 0.048), 0 12.5px 10px rgba(90, 90, 90, 0.06),
-    0 22.3px 17.9px rgba(90, 90, 90, 0.072),
-    0 41.8px 33.4px rgba(90, 90, 90, 0.086), 0 100px 80px rgba(90, 90, 90, 0.12);
+  border-bottom: 1px solid #ffffff;
 }
 .theme-changer-dark {
   color: white;
@@ -191,12 +187,34 @@ nav {
   padding: 2%;
 }
 .sent-light {
-  background-color: #1771d8;
+  /* background-color: #1771d8; */
+  background: rgb(68, 157, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(68, 157, 255, 1) 0%,
+    rgba(75, 182, 255, 1) 100%,
+    rgba(99, 175, 252, 1) 100%
+  );
+  border-bottom-right-radius: 0px;
   color: white;
 }
 .sent-dark {
-  color: white;
-  background: #2987f3;
+  color: rgb(39, 39, 39);
+  /* background: rgb(224, 222, 222);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 222, 222, 1) 0%,
+    rgba(241, 241, 241, 1) 52%,
+    rgba(236, 236, 236, 1) 100%
+  ); */
+  background: rgb(213, 229, 231);
+  background: linear-gradient(
+    90deg,
+    rgba(213, 229, 231, 1) 0%,
+    rgba(227, 241, 241, 1) 52%,
+    rgba(233, 246, 244, 1) 100%
+  );
+  border-bottom-right-radius: 0px;
 }
 
 .received-light,
@@ -217,26 +235,31 @@ nav {
 .received-light {
   background-color: white;
   color: black;
+  border-top-left-radius: 0px;
 }
 .received-dark {
   color: white;
-  background: #313131;
+  background: #31313172;
+  border-top-left-radius: 0px;
 }
 
-.sent-dark .display-name,
-.sent-light .display-name {
-  font-size: 1.2rem;
+.sent-dark .display-name {
+  font-size: 14.4px;
   font-weight: 600;
-  color: white;
+  color: rgb(39, 39, 39);
+}
+
+.sent-light .display-name {
+  color: #ffffff;
 }
 
 .received-dark .display-name,
 .received-light .display-name {
-  font-size: 1.2rem;
+  font-size: 14.4px;
   font-weight: 600;
 }
 .received-dark .display-name {
-  color: #70b3ff;
+  color: white;
 }
 .received-light .display-name {
   color: #1771d8;
@@ -268,6 +291,11 @@ input {
   border: none;
   border-radius: 3px;
   padding: 10px;
+}
+
+input:focus {
+  outline: none;
+  border: none;
 }
 
 .send-button {
@@ -410,12 +438,19 @@ input {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    background-color: rgb(23, 113, 216);
+    background: rgb(68, 157, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(68, 157, 255, 1) 0%,
+      rgba(75, 182, 255, 1) 100%,
+      rgba(99, 175, 252, 1) 100%
+    );
     color: white;
     margin: 0.5%;
     border-radius: 10px;
     float: right !important;
     padding: 2%;
+    border-bottom-right-radius: 0px;
   }
 
   .recived {
@@ -431,6 +466,7 @@ input {
     margin: 0.5%;
     border-radius: 10px;
     float: left;
+    border-top-left-radius: 0px;
     padding: 2%;
   }
 
@@ -669,4 +705,25 @@ input {
   .navbar-light .theme-changer-light {
     width: 20%;
   }
+  .sent .display-name {
+    font-size: 14.4px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .recived .display-name {
+    font-size: 14.4px;
+    font-weight: 600;
+    color: rgb(23, 113, 216);
+  }
+  form {
+    height: 7%;
+  }
+}
+.lower-wrapper {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: end;
 }

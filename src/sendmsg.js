@@ -7,6 +7,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import './chat.css'
+import {FaPaperPlane} from "react-icons/fa"
 
 
 function SendMessage(props) {
@@ -41,7 +42,7 @@ function SendMessage(props) {
                             setMsg(e.target.value)
                         }} className={props.theme=='light' ? 'msg-field-light' : 'msg-field-dark'} />
                         <button type='submit' className={props.theme == 'light' ? 'send-button-light' : 'send-button-dark'}>
-                            <p>send</p>
+                            <FaPaperPlane style={{fontSize: "18px"}} />
                         </button>
                     
                 </form>

@@ -104,7 +104,7 @@ function Chat() {
           {/* </div> */}
         </div>
       </nav>
-      <div className="upper-gap" style={{ height: "100px" }}></div>
+      <div className={theme == "light" ? "lower-gap-light" : "lower-gap-dark"} style={{ height: "100px", border: "none" }}></div>
       <div className={theme == "light" ? "container-light" : "container-dark"}>
         {messages.map(({ id, text, photoURL, uid, displayName, time }) => {
           return (
@@ -128,7 +128,7 @@ function Chat() {
                   }`}
                 >
                   <div>
-                    <div className="display-name">{displayName}</div>
+                    <div className="display-name">{id!=id ? <div>You</div> : displayName}</div>
                     <p>{text}</p>
                   </div>
                 </div>
@@ -138,7 +138,7 @@ function Chat() {
         })}
       </div>
       <div ref={scroll} className="scroll"></div>
-      <div className={theme == "light" ? "lower-gap-light" : "lower-gap-dark"} style={{height: "70px"}}></div>
+      <div className={theme == "light" ? "lower-gap-light" : "lower-gap-dark"} style={{height: "80px", border: "none"}}></div>
       <SendMessage theme={theme} />
     </>
   );
