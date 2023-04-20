@@ -717,7 +717,7 @@ input:focus {
     color: rgb(23, 113, 216);
   }
   form {
-    height: 7%;
+    height: 44px;
   }
 }
 .lower-wrapper {
